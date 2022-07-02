@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
+
+#page {
+    background-color: #191816;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#form {
+    display: flex;
+    flex: 1;
+    flex-basis: 50%;
+}
+
+#imgbg {
+    display: flex;
+    flex: 1;
+    flex-basis: 50%;
+}
