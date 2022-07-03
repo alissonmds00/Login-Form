@@ -8,7 +8,7 @@
     --background: #191816;
     --form-background: #24221f;
     --primary-color: #ffc632;
-  }
+}
 
 body {
     min-height: 100vh;
@@ -55,32 +55,46 @@ main {
     left: 74px;
     top: 194px;
 
-background: #24221F;
-border-radius: 4px;
+    background: #24221F;
+    border-radius: 4px;
 }
 
 h1 {
     color: var(--text-title);
 }
 
-#header  {
+a, #registro {
+    text-decoration: none;
+    position: absolute;
+    width: 153px;
+    height: 21px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFC632;
+    
+}
+
+#header {
     position: absolute;
     z-index: 2;
     width: 334px;
     height: 64px;
     left: 119px;
     top: 55px;
-    justify-content:left;
+    justify-content: left;
 }
 
 #email {
     box-sizing: border-box;
-
     position: relative;
     width: 335px;
     height: 44px;
     left: 119px;
     top: 146px;
+
 }
 
 #senha {
@@ -89,18 +103,24 @@ h1 {
     width: 335px;
     height: 44px;
     left: 119px;
-    top: 239px;
+    top: 264px;
     border: 1px solid #868686;
     border-radius: 4px;
 }
 
-#lembre {
+#lsenha {
+    position: absolute;
+    left: 119px;
+    top: 239px;
+}
+
+#lembreme {
     position: absolute;
     width: 81px;
     height: 19px;
     left: 144px;
-    top: 332;
-    /*font-family: 'Roboto';*/
+    top: 332px;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -127,20 +147,56 @@ button {
     align-items: center;
     padding: 12px 24px;
     gap: 10px;
-
     position: absolute;
     width: 334px;
     height: 51px;
     left: 119px;
     top: 372px;
-
     background: #FFC632;
     border-radius: 4px;
 }
+
+#registro {
+    position: absolute;
+        width: 235px;
+    height: 21px;
+    left: 167px;
+    top: 437px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+
+#esqueci {
+    display: flex;
+    position: absolute;
+    width: 153px;
+    height: 21px;
+    left: 300px;
+    top: 331px;
+    justify-content: right;
+}
+
+span a {
+    position: absolute;
+    top: 0px;
+    left: 122px;
+}
+
+#lsenha {
+    position: absolute;
+    top: 239px;
+}
+
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
-    /*CONFIGURAÇÕES AQUI */
-} 
+    #imgbg {
+        width: 0px;
+        height: 0px;
+    }
+}
 
 @media only screen and (min-width: 900px) {
-    /*CONFIGURAÇÕES AQUI */
-} 
+}

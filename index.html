@@ -16,16 +16,16 @@
             <div id="form">
                 <span id="header"><h1><img src="assets/log-in.svg" alt=""> Faça seu Login</h1>
                 <p>Entre com suas informações de cadastro.</p></span>
-                <form action="get">
+                <form action=""> <!-- Aqui seria "get" -->
                     <label for="email" id="email">E-mail</label><br>
                     <input type="email" name="email" id="email" placeholder="Digite o seu e-mail" autofocus>
-                    <label id="senha" for="senha">Senha</label><br>
+                    <label id="lsenha" for="senha">Senha</label><br>
                     <input type="password" name="senha" id="senha" placeholder="Digite sua senha" minlength="8">
                     <input type="checkbox" name="lembreme" id="checkbox">
-                    <label for="checkbox" id="lembre">Lembre-me</label>
-                    <a href="">Esqueci minha senha</a>
+                    <label for="checkbox" id="lembreme">Lembre-me</label>
+                    <a href="" id="esqueci">Esqueci minha senha</a>
                     <button type="submit">ENTRAR</button>
-                    <span>Não tem uma conta? Registre-se</span>
+                    <span id="registro">Não tem uma conta? <br> <a href="" id="registrese">Registre-se</a></span>
                 </form>
             </div>
         </div>
