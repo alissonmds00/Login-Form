@@ -10,21 +10,137 @@
     --primary-color: #ffc632;
   }
 
-#page {
-    background-color: #191816;
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    color: var(--text-base);
+}
+
+main {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
 
-#form {
-    display: flex;
-    flex: 1;
+#background {
+    background-color: var(--background);
+    z-index: 0;
+    justify-content: flex-start;
     flex-basis: 50%;
 }
 
 #imgbg {
     display: flex;
-    flex: 1;
     flex-basis: 50%;
+    z-index: 0;
+    justify-content: flex-end;
 }
+
+#logo {
+    color: var(--text-base);
+    position: absolute;
+    width: 115px;
+    height: 28px;
+    left: 40px;
+    top: 40px;
+    z-index: 1;
+
+}
+
+#form {
+    z-index: 1;
+    position: absolute;
+    width: 572px;
+    height: 512px;
+    left: 74px;
+    top: 194px;
+
+background: #24221F;
+border-radius: 4px;
+}
+
+h1 {
+    color: var(--text-title);
+}
+
+#header  {
+    position: absolute;
+    z-index: 2;
+    width: 334px;
+    height: 64px;
+    left: 119px;
+    top: 55px;
+    justify-content:left;
+}
+
+#email {
+    box-sizing: border-box;
+
+    position: relative;
+    width: 335px;
+    height: 44px;
+    left: 119px;
+    top: 146px;
+}
+
+#senha {
+    box-sizing: border-box;
+    position: absolute;
+    width: 335px;
+    height: 44px;
+    left: 119px;
+    top: 239px;
+    border: 1px solid #868686;
+    border-radius: 4px;
+}
+
+#lembre {
+    position: absolute;
+    width: 81px;
+    height: 19px;
+    left: 144px;
+    top: 332;
+    /*font-family: 'Roboto';*/
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A9AFB9;
+}
+
+#checkbox {
+    position: absolute;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    left: 119px;
+    top: 332px;
+    border: 1px solid #868686;
+    border-radius: 4px;
+}
+
+button {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 10px;
+
+    position: absolute;
+    width: 334px;
+    height: 51px;
+    left: 119px;
+    top: 372px;
+
+    background: #FFC632;
+    border-radius: 4px;
+}
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    /*CONFIGURAÇÕES AQUI */
+} 
+
+@media only screen and (min-width: 900px) {
+    /*CONFIGURAÇÕES AQUI */
+} 
