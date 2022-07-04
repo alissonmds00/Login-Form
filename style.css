@@ -206,14 +206,40 @@ span a {
     top: 239px;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 1250px) {
+.simbol {
+    width: 20px;
+    height: 20px;
+}
+
+#imgemail {
+    position: absolute;
+    top: 187px;
+    left: 131px;
+}
+
+#imgsenha {
+    position: absolute;
+    top: 280px;
+    left: 131px;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 1300px) {
     #imgbg {
-        width: 0px;
-        height: 0px;
+        display: none;
+        visibility: hidden;
     }
     body {
         width: 100vw;
         height: 100vh;
-        background-color: var(--form-background);
+        display: flex;
+        background: var(--background);
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+
+    }
+    #form {
+        padding-bottom: 90px;
+        background-color: var(--background);
     }
 }
